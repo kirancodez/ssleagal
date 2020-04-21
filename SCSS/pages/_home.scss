@@ -885,12 +885,15 @@ $button-width: 30px;
   margin-right:8px;
   margin-top:8rem;
   .about-head{
-    margin-top:4rem;
+    margin-top:2.5rem;
+    margin-bottom:2rem;
+    text-align: center;
     p{
       font-family: "Rubik", sans-serif;
       font-size: 0.8rem;
       color: #b69d74;
        margin-bottom: 4px;
+
     }
     h3{
       font-family: "Merriweather", serif;
@@ -914,14 +917,15 @@ $button-width: 30px;
     border-radius:12px;
     background-color: white;
     margin-bottom: 10px;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
-                0 2px 2px rgba(0,0,0,0.12), 
-                0 4px 4px rgba(0,0,0,0.16), 
-                0 8px 8px rgba(0,0,0,0.20);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 6px 8px rgba(0,0,0,0.11),
+              0 8px 16px rgba(0,0,0,0.11);
   }
   .card-content{
     border:0px;
-    padding: 10px 10px 10px 10px;
+    padding: 20px 10px 20px 10px;
     .Head_Icon{
       display: inline-flex;
       img{
@@ -939,6 +943,8 @@ $button-width: 30px;
       p{
         color: #8e8f90;
         font-family: $font1;
+        font-size: 17px;
+        margin-bottom: 0px;
         a {
         color: $white;
        }
