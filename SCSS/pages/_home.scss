@@ -1,7 +1,7 @@
 @use '/Applications/MAMP/htdocs/ssleagal/SCSS/pages/_variables.scss';
 $font1:'Rubik', sans-serif;
 $font2:'Merriweather', serif;
-$gray:#606569;
+$gray:#8e8f90;
 $dblue:#1f2839;
 $lblue:#2c4065;
 $cream:#b69d74;
@@ -879,9 +879,11 @@ $button-width: 30px;
 }
 .Practice-section{
   background-color:#f2f3ed;
+  // background-color: #c3e613;
   border-radius:20px;
   margin-left:8px;
   margin-right:8px;
+  margin-top:8rem;
   .about-head{
     margin-top:4rem;
     p{
@@ -903,5 +905,43 @@ $button-width: 30px;
       word-spacing: 2px;
     }
   }
-  
+  .card_sec{
+    margin: 10px;
+  }
+  .Singlecard
+  {
+    background-color: white;
+    border-radius:12px;
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.16), 
+                0 8px 8px rgba(0,0,0,0.20);
+  }
+  .card-content{
+    border:0px;
+    padding: 10px 10px 10px 10px;
+    .Head_Icon{
+      display: inline-flex;
+      img{
+        width: 40px;
+        margin-right: 12px;
+        filter: invert(87%) sepia(3%) saturate(5067%) hue-rotate(342deg) brightness(81%) contrast(69%);
+      }
+      h1{
+        margin-top:10px;
+        font-family: $font2;
+        color: $dblue;
+        font-size: 1.2rem;
+      }
+    }
+      p{
+        color: #8e8f90;
+        font-family: $font1;
+        a {
+        color: $white;
+       }
+      }
+  }
 }
