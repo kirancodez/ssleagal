@@ -1,7 +1,7 @@
 @use '/Applications/MAMP/htdocs/ssleagal/SCSS/pages/_variables.scss';
 $font1:'Rubik', sans-serif;
 $font2:'Merriweather', serif;
-$gray:#8e8f90;
+$gray:#646465;
 $dblue:#1f2839;
 $lblue:#2c4065;
 $cream:#b69d74;
@@ -788,7 +788,10 @@ $button-width: 30px;
   left: 3%;
   z-index: 12;
 }
-
+.contentDiv
+{
+  margin: 0px 10px 0px 10px;
+}
 .Aboutus_Section
 {
   margin-top: 4rem;
@@ -810,7 +813,7 @@ $button-width: 30px;
   }
   .Content
   {
-    color:#8e8f90;
+    color:#646465;
     font-size: 17px;
     font-family: $font1;
     word-spacing: 2px;
@@ -850,8 +853,9 @@ $button-width: 30px;
   {
     margin-bottom:100px;
     .contentDiv{
-      margin-top:20px;
       margin-top: 6rem; 
+      margin: 0px;
+
     }
   .contentdiv
   {
@@ -883,7 +887,7 @@ $button-width: 30px;
   border-radius:20px;
   margin-left:8px;
   margin-right:8px;
-  margin-top:8rem;
+  margin-top:6rem;
   .about-head{
     margin-top:2.5rem;
     margin-bottom:2rem;
@@ -902,7 +906,7 @@ $button-width: 30px;
       font-weight: 600;
     }
     .abtLabel{
-      color: #8e8f90;
+      color: #646465;
       font-size: 17px;
       font-family: "Rubik", sans-serif;
       word-spacing: 2px;
@@ -916,12 +920,11 @@ $button-width: 30px;
     background-color: white;
     border-radius:12px;
     background-color: white;
-    margin-bottom: 10px;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-              0 2px 2px rgba(0,0,0,0.11), 
-              0 4px 4px rgba(0,0,0,0.11), 
-              0 6px 8px rgba(0,0,0,0.11),
-              0 8px 16px rgba(0,0,0,0.11);
+    margin-bottom: 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+              0 2px 2px rgba(0,0,0,0.15), 
+              0 4px 4px rgba(0,0,0,0.15), 
+              0 8px 8px rgba(0,0,0,0.15);
   }
   .card-content{
     border:0px;
@@ -941,7 +944,7 @@ $button-width: 30px;
       }
     }
       p{
-        color: #8e8f90;
+        color: #646465;
         font-family: $font1;
         font-size: 17px;
         margin-bottom: 0px;
@@ -951,3 +954,15 @@ $button-width: 30px;
       }
   }
 }
+.view_all{
+    padding: 12px 25px 12px 25px;
+    background-color: white;
+    border-radius: 40px;
+    color: #b69d74;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 13px;
+    border: 2px solid #b69d74;
+}
+    
