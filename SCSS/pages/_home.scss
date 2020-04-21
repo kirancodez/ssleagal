@@ -414,8 +414,8 @@ $button-width: 30px;
 
 
 .button_container {
-  position: fixed;
-  top: 5%;
+  position: absolute;
+  top: 4%;
   right: 3%;
   height: $button-height;
   width: $button-width;
@@ -678,7 +678,7 @@ $button-width: 30px;
     color: white;
     font-size: 2.2rem;
     line-height: 54px;
-    font-weight: 300;
+    font-weight: 600;
        span{
         color: $white;
        }
@@ -686,7 +686,7 @@ $button-width: 30px;
   button 
   {
       margin-top: 1rem;
-      padding: .8rem;
+      padding: 17px 20px 17px 20px;
       border-radius: 3rem;
       background-color: transparent;
       color: white;
@@ -715,11 +715,11 @@ $button-width: 30px;
     position: absolute;
     z-index: 12;
     bottom: 20px;
-    width: 98%;
+    width: 96%;
     .blogdiv{
         background-color:white;
         height: 4.3rem;
-        width: 98%;
+        width: 96%;
         margin: 0 auto;
         border-radius: 10px;
          box-shadow: 6px 7px 5px #00000075;
@@ -799,15 +799,15 @@ $button-width: 30px;
   h3{
     font-family: "Merriweather", serif;
     color: #2c4065;
-    font-weight: 100;
-    margin-right: 38px;
+    font-weight: 600;
+    margin-right: 100px;
     margin-bottom: 20px;
     line-height: 44px;
   }
   .Content
   {
     color:$gray;
-    font-size: 15px;
+    font-size: 18px;
     font-family: $font1;
     word-spacing: 2px;
 
@@ -865,7 +865,7 @@ $button-width: 30px;
 }
 .carousel_mobile
 {
-  height:85vh;
+  height:95vh;
   width:100%;
   overflow:hidden;
 }
