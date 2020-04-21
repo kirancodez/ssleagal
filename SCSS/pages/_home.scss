@@ -415,7 +415,7 @@ $button-width: 30px;
 
 .button_container {
   position: fixed;
-  top: 2%;
+  top: 5%;
   right: 3%;
   height: $button-height;
   width: $button-width;
@@ -844,10 +844,28 @@ $button-width: 30px;
 @media(min-width:768px){
   .Aboutus_Section
   {
+    margin-bottom:100px;
+    .contentDiv{
+      margin-top:20px;
+      margin-top: 7rem; 
+    }
+  .contentdiv
+  {
+    margin-top: 100px;
+  }
     margin-top: 6rem;
     h3{
       font-size: 2.3rem;
       margin-bottom: 25px;
     }
+    img{
+      float: right;
+    }
   }
+}
+.carousel_mobile
+{
+  height:85vh;
+  width:100%;
+  overflow:hidden;
 }
