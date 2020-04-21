@@ -396,6 +396,9 @@ $white:#b69d74;
     .header-section{
         display: none;
     }
+    .Abt_img{
+      display: none;
+    }
 
    }
    @media (min-width:768px) {
@@ -799,8 +802,9 @@ $button-width: 30px;
   h3{
     font-family: "Merriweather", serif;
     color: #2c4065;
-    font-weight: 600;
-    margin-right: 100px;
+    font-size:2rem;
+    font-weight: 800;
+    margin-right: 35px;
     margin-bottom: 20px;
     line-height: 44px;
   }
@@ -865,7 +869,7 @@ $button-width: 30px;
 }
 .carousel_mobile
 {
-  height:95vh;
+  height:93vh;
   width:100%;
   overflow:hidden;
 }
