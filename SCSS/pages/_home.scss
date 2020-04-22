@@ -919,21 +919,23 @@ $button-width: 30px;
   {
     border-radius:12px;
     border: 0px;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
-              0 2px 2px rgba(0,0,0,0.15), 
-              0 4px 4px rgba(0,0,0,0.15), 
-              0 8px 8px rgba(0,0,0,0.15);
-    margin-bottom: 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04), 
+                0 2px 4px rgba(0,0,0,0.04), 
+                0 4px 8px rgba(0,0,0,0.04), 
+                0 8px 16px rgba(0,0,0,0.04),
+                0 16px 32px rgba(0,0,0,0.04), 
+                0 32px 64px rgba(0,0,0,0.04);
+    margin-bottom: 30px;
   }
   .card-content{
     border:0px;
-    // padding: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
     .Head_Icon{
       display: inline-flex;
       img{
         width: 40px;
         margin-right: 12px;
-        filter: invert(87%) sepia(3%) saturate(5067%) hue-rotate(342deg) brightness(81%) contrast(69%);
+filter: invert(67%) sepia(2%) saturate(5065%) hue-rotate(0deg) brightness(97%) contrast(79%);
       }
       h1{
         margin-top:10px;
@@ -982,6 +984,8 @@ $button-width: 30px;
 .about-head
 {
   text-align: left!important;
+
+  
 }
 h3{
     font-size: 2.3rem !important;
@@ -998,8 +1002,7 @@ h3{
 }
 .Singlecard
 {
-  // margin-right: 10px;
-  // margin-left: 10px;
+  padding: 0px;
 }
 .Head_Icon{
   display:block!important;
