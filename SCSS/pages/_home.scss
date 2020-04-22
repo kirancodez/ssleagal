@@ -788,10 +788,6 @@ $button-width: 30px;
   left: 3%;
   z-index: 12;
 }
-.contentDiv
-{
-  margin: 0px 10px 0px 10px;
-}
 .Aboutus_Section
 {
   margin-top: 4rem;
@@ -848,13 +844,29 @@ $button-width: 30px;
       color: White!important;
     }
 }
+@media(max-width:768px)
+{
+  .contentDiv
+  {
+    padding: 0px 15px 0px 15px;
+  }
+  .Practice-section{
+    .card{
+      margin-bottom: 15px !important;
+    }
+  }
+  .card-body{
+    padding: 0px;
+  } 
+
+
+}
 @media(min-width:768px){
   .Aboutus_Section
   {
     margin-bottom:100px;
     .contentDiv{
       margin-top: 6rem; 
-      margin: 0px;
 
     }
   .contentdiv
