@@ -45,7 +45,7 @@ $(document).ready(function(){
         wrapperMenu.classList.toggle('open');
     })
 });
-$(window).on('load',function(){
+$(window).on('load',function(){ 
     var containerHeight = $(".pracCont").height();
     var CounterHight = containerHeight-100+"px";
     var halfpx = containerHeight / 2;
