@@ -53,12 +53,12 @@ $(window).on('load',function(){
     var contPixel = halfpx/1.3;
     var pixel2 = contPixel+"px";
     $('.counter').css('transform', 'translate(0px, ' + pixel + ')');
+    // $('.Practice-section').height(CounterHight);
     $('.Counter-content').css('transform', 'translate(0px, ' + pixel + ')');
     $('.Counter-content').css('height', CounterHight);
-    // $('.Counter-content').css('transform', 'translate(0px, 200px)');
-    // $(".counter1").css({ 'transform': 'translateY(' + containerHeight + ')' });
-
-
+    $('.Practice-section').height(function (index, height) {
+        return (height + halfpx);
+    });
 
 
     $.fn.jQuerySimpleCounter = function (options) {

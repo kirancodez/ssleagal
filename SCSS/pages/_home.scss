@@ -6,6 +6,9 @@ $dblue:#1f2839;
 $lblue:#2c4065;
 $cream:#b69d74;
 $white:#b69d74;
+html, body {
+  height: 100%;
+}
 .BrandSec
 {
     width: 20%;
@@ -1053,13 +1056,11 @@ h3{
 {
   width:100%;
   overflow: hidden;
-  background-repeat: no-repeat;
   background-size: 100%;
-  object-fit: cover;
-  // background-image:url("../assets/img/background_img.png");
-  // background-position: top;
-  background-color: #1f2839;
-
+  background-image: url('../assets/img/background_img.png'); /*  Background Image Linki */   
+  background-repeat: no-repeat;  /* Background Image Will not repeat */
+  background-size: cover; /* This will make background image width 100% and height 100% */
+  background-position: top;
 
 }
 
@@ -1073,7 +1074,6 @@ body {
 
   
 
-  color:white;
 
   position: relative;
 
@@ -1242,7 +1242,7 @@ td {
 }
 .number{
   font-size: 40px;
-  columns: white !important;
+  color: white !important;
   padding: 0;
   font-family: $font1;
   text-align: left;
@@ -1391,15 +1391,16 @@ td {
   }
 
 
-  .img_icon{
-    img{
-      width: 40px !important;
-      height: 40px !important;
-    }
+ 
 
+.count_content
+{ text-align: center;
+  h2{
+    margin-bottom: 10px;
   }
-.fullWidth{
-}
+  .number{
+    text-align: center;
+  }
 }
 
 .img_icon
@@ -1408,8 +1409,209 @@ td {
   margin-top: auto;
   margin-bottom: auto;
   img{
-      width: 50px;
-      height: 50px;
-      margin-right: 20px;
+    display: none;
   }
 }
+
+}
+ .img_icon{
+    margin-top: auto;
+    margin-bottom: auto;
+    img{
+      margin-right: 15px;
+      width: 50px !important;
+      height: 50px !important; 
+    }
+
+  }
+  .free{
+    margin-top: 40px;
+    font-family: $font1;
+    font-size: 17px;
+    font-weight: 500;
+    a{
+      color: $cream;
+      text-decoration: none;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+
+
+  // cotact form section
+
+  .contact-section
+  {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    .contact-content{
+      h3{
+      font-family: "Merriweather", serif;
+      color: #2c4065;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      line-height: 44px;
+      text-align: center;
+        span{
+          color: $cream;
+        }
+    }
+     p{
+        color: #646465;
+        font-size: 17px;
+        font-family: "Rubik", sans-serif;
+        word-spacing: 2px;
+      }
+
+    }
+    @media (min-width: 767.98px) {
+      .form-title{
+          padding: 40px 10px 40px 10px !important;
+      }
+      .contact-content{
+          padding-left: 25px;
+          padding-right: 24px;
+        h3{
+          text-align: left !important;
+          margin-bottom: 20px !important;
+        }
+        p{
+          margin-left: 6px;
+        }
+   
+      }
+      .Contact-form{
+        padding: 20px 12px 20px 12px;
+        border-radius: 15px;
+         box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+      }
+    
+    }
+
+    .Contact-form{
+
+
+      #success-message {
+  opacity: 0;
+}
+
+
+.margin-top-25 {
+  margin-top: 25px;
+}
+
+.form-title {
+  padding: 25px;
+  font-size: 30px;
+  color: #2c4065;
+  font-weight: 500;
+  font-family: $font2;
+}
+
+.form-group .form-control {
+  -webkit-box-shadow: none;
+  border-bottom: 1px;
+  border-style: none none solid none;
+  border-radius:0; 
+  border-color: rgb(110, 109, 109);
+}
+
+.form-group .form-control:focus {
+	box-shadow: none;
+  border-width: 0 0 2px 0;
+  border-color:rgb(110, 109, 109);
+  
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-mod.btn-large {
+    height: auto;
+    padding: 13px 52px;
+    font-size: 15px;
+}
+
+.btn-mod.btn-border {
+        padding: 15px 20px 15px 20px;
+    background-color: #b69d74;
+    border-radius: 40px;
+    border: 0px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-right: 1rem;
+    border: 2px solid #b69d74;
+}
+
+.btn-mod, a.btn-mod {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4px 13px;
+    color: #fff;
+    background: rgba(34,34,34, .9);
+    border: 1px solid transparent;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.btn-mod.btn-border:hover, .btn-mod.btn-border:active, .btn-mod.btn-border:focus, .btn-mod.btn-border:active:focus {
+    color: #fff;
+    border-color: #000;
+    background: #000;
+    outline: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .btn-mod.btn-large {
+       padding: 6px 16px;
+       font-size: 11px;
+    }
+  
+    .form-title {
+        padding:0px;
+        font-family: "Merriweather", serif;
+        color: #2c4065;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        line-height: 44px;
+        text-align: center;
+  }
+}
+
+    }
+
+  }
+
+      @media (max-width: 767.98px) {
+       .Contact-form{
+         margin-top: 40px;
+       }
+
+      }
+
