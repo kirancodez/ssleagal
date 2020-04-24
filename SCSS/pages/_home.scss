@@ -92,12 +92,12 @@ $white:#b69d74;
     object-fit: cover;
 }
 
-.item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 300px;
-}
+// .item img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     min-height: 300px;
+// }
 
 .carosel-content{
   position: absolute;
@@ -1051,22 +1051,29 @@ h3{
 }
 .counter
 {
-  overflow: hidden;
   width:100%;
-  background-color: $dblue;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+  // background-image:url("../assets/img/background_img.png");
+  // background-position: top;
+  background-color: #1f2839;
+
 
 }
+
 /*counter styles starts*/
 
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
 
 body {
 
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  
 
-  font-size: 13px;
+  
 
-  color: #666;
+  color:white;
 
   position: relative;
 
@@ -1146,7 +1153,8 @@ td {
 
 .fullWidth {
 
-  width: 100% !important;
+  width: 80% !important;
+  margin: auto;
 
   display: table;
 
@@ -1217,10 +1225,13 @@ td {
   padding: 0;
 
 }
-
+.item{
+  margin-left: auto;
+  margin-right: auto;
+}
 .projectFactsWrap .item {
 
-  width: 25%;
+  width: 22%;
 
   height: 100%;
 
@@ -1229,28 +1240,27 @@ td {
   text-align: center;
 
 }
-
-.projectFactsWrap .item p.number {
-
+.number{
   font-size: 40px;
-
+  columns: white !important;
   padding: 0;
-
-  font-weight: bold;
-
+  font-family: $font1;
+  text-align: left;
+  font-weight: 400;
 }
 
 .projectFactsWrap .item p {
 
   color: rgba(255, 255, 255, 0.8);
 
-  font-size: 18px;
+  font-size: 13px;
 
   margin: 0;
-
-  padding: 10px;
-
-  font-family: 'Open Sans';
+  text-align: left;
+  // padding: 10px;
+  text-transform: uppercase;
+  color: $cream;
+  font-family: $font2;
 
 }
 
@@ -1382,3 +1392,14 @@ td {
 
 }
 
+.img_icon
+{
+
+  margin-top: auto;
+  margin-bottom: auto;
+  img{
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+  }
+}
