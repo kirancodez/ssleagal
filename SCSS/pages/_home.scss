@@ -1588,7 +1588,6 @@ textarea {
 
 @media only screen and (max-width: 500px) {
     .btn-mod.btn-large {
-       padding: 6px 16px;
        font-size: 11px;
     }
   
@@ -1615,3 +1614,178 @@ textarea {
 
       }
 
+
+
+
+
+
+.testimonials{
+  margin-bottom: 4rem;
+  .testi-frame{
+     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+      &:after {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        right: 11px;
+        border-top: 3px solid $cream;
+        border-right: 3px solid $cream;
+        }
+      &:before {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        bottom: 0px;
+        left: 11px;
+        border-bottom: 3px solid $cream;
+        border-left: 3px solid $cream;
+        }
+
+    // border: 1px solid $dblue;
+    // border-radius: 12px;
+    .testi-carousel{
+    }
+    .bQuote{
+      width: 45px;
+      height: auto;
+      position: absolute;
+      z-index: 23;
+      left: 34px;
+      filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 0.2));
+      top: -16px;
+    }
+    .testi-content{
+      padding: 2rem;
+      .dp{
+      width: 100px;
+      height: auto;  
+      border-radius: 100%;
+      padding: 2px;
+      border: 2px solid $cream;
+      }
+      .testi-name{
+        margin-top: 8px;
+        font-size: 17px;
+        columns: $lblue;
+        font-family: $font1;
+      }
+      .comment{
+        font-size: 17px;
+        font-family: $font1;
+
+      }
+    .rating{
+      color: gray;
+      font-size: 17px;
+      .active{
+        color: gold;
+      }
+      
+    }
+  }
+
+  }
+}
+
+.testimonialHeader{
+  text-align: center;
+  p{
+    font-family: "Rubik", sans-serif;
+    font-size: 0.8rem;
+    color: #b69d74;
+    margin-bottom: 4px;
+  }
+  h3{
+    font-family: "Merriweather", serif;
+    color: #2c4065;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+    line-height: 44px;
+  }
+}
+
+@media (min-width: 767.98px) {
+.testimonialHeader{
+  text-align: left;
+    padding-bottom: 20px;
+}
+.bQuote{
+  width: 50px !important;
+}
+
+}
+
+.blogs{
+  .blog_cont{
+    padding: 10px;
+  }
+  .card{
+    border: 0px;
+  }
+  img{
+    border-radius: 10px;
+    margin-bottom: 6px;
+  }
+  label{
+    font-family: "Rubik", sans-serif;
+    font-size: 0.7rem;
+    color: gray;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+  }
+  h3{
+    padding: 0px;
+    font-family: "Merriweather", serif;
+    color: #2c4065;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 44px;
+
+  }
+  p{
+    font-size: 17px;
+    font-family: "Rubik", sans-serif;
+    color: gray;
+    margin-bottom: 6px;
+  }
+  a{
+    text-decoration: none;
+    color: $cream;
+    font-family: $font1;
+    font-size: 16px;
+    &:hover{
+      color: $lblue;
+      transition: 1s;
+    }
+  }
+  .blog_img{
+    position: relative;
+      .date_time{
+        position: absolute;
+        right:0;
+        bottom: 0;
+        z-index: 33;
+        background-color: white;
+        color: $lblue;
+        padding: 5px;
+        border-radius: 12px 0px 0px 0px;
+        font-family: $font1;
+        font-size: 14px;
+        -webkit-box-shadow: -3px -1px 17px -9px rgba(0,0,0,0.75);
+        -moz-box-shadow: -3px -1px 17px -9px rgba(0,0,0,0.75);
+        box-shadow: -3px -1px 17px -9px rgba(0,0,0,0.75);
+  }
+  }
+
+}
