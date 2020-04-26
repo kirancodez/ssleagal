@@ -1,164 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ssleagel</title>
-    <script   src="./assets/js/jquery.min.js" ></script>
-    <script   src="./assets/js/custom.js" ></script>
-    <script src="./assets/js/bootstrap.min.js" ></script>
-    <script src="./assets/js/gsap.min.js" ></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/custom-dist.css">
-</head>
-<body>
-<section class="header-section">
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <div class="row mainSec">
-  <div class="BrandSec">
-    <a href=""><img src="./assets/img/logo1.png" alt="" width="140px"></a>
-  </div>
-  <div class="navigation-wrapper">
-    <ul>
-      <li>
-        <a href="">Home</a>
-      </li>
-      <li>
-        <a href="">About Us</a>
-      </li>
-      <li>
-        <a href="">Practice Area</a>
-      </li>
-      <li>
-        <a href="">Attorney</a>
-      </li>
-      <li>
-        <a href="">Blog</a>
-      </li>
-      <li>
-        <a href="">Contact</a>
-      </li>
-    </ul>
-  </div>
-  <div class="ContactSec mt-3">
-    <p><span class="mr-2"><img src="./assets/svg/phone.svg" alt="" class="phonesvg" ></span><a href="tel:+91987654321">+91 987-654-321</a></p>
-  </div>
-</div>
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
-  </ol>
-  <div class="bg-white  Timeindicator ">
-  <div class="row w-100">
-    <div class="col-md-8 ">
-    <div class="d-flex progress_section">
-    <p class="CurrentSlide mr-3">01</p>
-      <div id="myProgress" >
-          <div id="myBar"></div>
-        </div>
-    <p class="NextSlide ml-3 ">02 </p>
-    <div class="arrowdiv">
-    <a class="carosalnav" href="#carouselExampleIndicators" role="button" data-slide="prev">  
-   <span><img src="./assets/svg/longleft.svg" alt="" width="43px" class="leftArrow"></span>
-  </a>
-   <a class="carosalnav" href="#carouselExampleIndicators" role="button" data-slide="next">  
-   <span><img src="./assets/svg/longleft.svg" alt="" width="43px" class="rightArrow"></span>
-  </a>
-    </div>
-   
-    <!-- <img src="./assets/svg/longleft.svg" alt="" width="50px" class="rightArrow"> -->
-    </div>
-    </div>  
-    <div class="col-md-4 Visitblog ">
-      <div class="blogdiv d-flex">
-        <p>Visit Our Blog</p>
-	      <a href="#" class="social-button hover" target="_blank">
-		      <span><img width="25px" src="./assets/svg/iconfinder_ic_keyboard_arrow_right_48px_352468.svg" alt=""></span>
-        </a>
-        </div>
-    </div>
-  </div>      
-  <!--  -->
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" >
-      <img class="d-block w-100" src="./assets/img/slide2.jpg" alt="First slide">
-      <div class="carosel-content">
-        <p>LEAGAL   CONSULTING</p>
-        <h1>If you have any - <br>leagal problems in your life ... <br><span>We are available</span></h1>
-        <button><span class="d-flex"><img width="30px" class="mr-3 ml-2" src="./assets/svg/chat.svg" alt=""><p class="mt-1">GET CONVERSATION</p></span></button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="./assets/img/slide1.jpg" alt="Second slide">
-      <div class="carosel-content">
-        <p>LEAGAL   CONSULTING</p>
-        <h1>If you have any - <br>leagal problems in your life ... <br><span>We are available</span></h1>
-        <button><span class="d-flex"><img width="30px" class="mr-3 ml-2" src="./assets/svg/chat.svg" alt=""><p class="mt-1">GET CONVERSATION</p></span></button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="./assets/img/slide3.jpg" alt="Third slide">
-    </div>
-  </div>
-</div>
-</section>
-<section class="mobile_header_section">
-<div id="mycarouselExampleIndicators" class="carousel_mobile slide" data-ride="carousel">
-    <a href="" class="logoimg"><img src="./assets/img/logo1.png" alt="" width="140px"></a>
-<div class="button_container" id="toggle">
-  <span class="top"></span>
-  <span class="middle"></span>
-  <span class="bottom"></span>
-</div>
 
-<div class="overlay" id="overlay">
-  <nav class="overlay-menu">
-    <ul>
-      <li ><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="./assets/img/slide1.jpg" alt="First slide">
-      <div class="Mobile_carosal_content">
-        <p>LEAGAL   CONSULTING</p>
-        <h1>If you have any - <br>leagal problems in your life ... <br><span>We are available</span></h1>
-        <button><span class="d-flex"><p class="mt-1">GET CONVERSATION</p></span></button>
-      </div>
-    </div>
-    <div class="indicator-mob">
-        <div class="blogdiv d-flex">
-          <div class="carosalNum">
-            <h3>01</h3>
-          </div>
-          <div class="BlgCnt">
-            <div class="d-flex vstblg">
-            <p>Visit Our Blog</p>
-	          <a href="#" class="social-button hover" target="_blank">
-		        <span><img width="25px" src="./assets/svg/iconfinder_ic_keyboard_arrow_right_48px_352468.svg" alt=""></span>
-            </a>
-            </div> 
-          </div>
-
-        </div>
-    </div>
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" src="./assets/img/slide2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="./assets/img/slide3.jpg" alt="Third slide">
-    </div> -->
-  </div>
-</div>
 
 </section>
-
+    <script src="./assets/js/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#includedContent").load("./includes/header.html");
+        $("#includedContentfooter").load("./includes/footer.html");
+      });
+    </script>
+    <div id="includedContent"></div>
 <section class="Aboutus_Section">
    <div class="container">
     <div class="row">
@@ -192,7 +42,7 @@
       </div>
     </div>
 
-<div class="container">
+<div class="container Card-container">
   <div class="card-deck">
     <div class="col-md-4 Singlecard">
       <div class="card">
@@ -258,7 +108,7 @@
 
   </div>
 </div>
-<button class="view_all">VIEW ALL</button>
+
   </div>  
     <div class="counter" id="cont">
       <div class="Counter-content">
@@ -313,7 +163,7 @@
         </div>
       </div>
         <div class="col-md-12 free">
-          <p class="text-white text-center" >If you have any leagal peoblem in life ...  <a href="" >Free Cunsultation</a> </p>
+          <p class="text-white text-center Counter_sub" >If you have any leagal peoblem in life ...  <a href="" >Free Cunsultation</a> </p>
         </div>
     </div>
     </div>
@@ -324,14 +174,14 @@
     <div class="row">
       <div class="col-md-6 m-md-auto">
         <div class="contact-content">
-          <h3>We see your situation seriously We are happy to <span>Help You</span></h3>
+          <h3>We see your situation seriously We are happy to <span>Help You.</span></h3>
           <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing  deserunt modi adipisci eos, ea sequi?</p>
           <p>Lorem ipsum dolor  totam veritatis vitae nostrum harum, optio, neque cupiditate alias consectetur inventore praesentium quo nostrum harum, optio, neque cupiditate alias consectetur inventore praesentium quo illum laborum. Eos quisquam at nam aspernatur facilis aliquid et.</p>
         </div>
       </div>
       <div class="col-md-6 "> 
         <div class="Contact-form">
-          <div class="container">
+          <div class="container mobile_border">
           
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
@@ -451,58 +301,69 @@
 <section class="blogs">
 <div class="testimonialHeader">
   <div class="container">
-    <div class="col-md-12">
-      <p class="ml-1">BLOG</p>
-      <h3>Our Blog</h3>
+    <div class="col-md-9 m-auto">
+      <p class="ml-1 prehead">BLOG</p>
+      <h3 class="blog_title">Our Blog</h3>
+      <p class="mb-3 blog_label">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eveniet inventore maxime cupiditate deserunt corporis voluptatum recusandae rerum nesciunt, perspiciatis amet quas nisi odit quibusdam soluta sunt dignissimos esse aperiam.</p>
     </div>
   </div>
 </div>
   <div class="container">
+    <div class="row">
     <div class="card-deck">
       <div class="col-md-4">
-          <div class="card">
+          <div class="card ">
             <div class="blog_img">
             <img class="img-fluid" src="./assets/img/woman.jpg" alt="">
             <div class="date_time">Januvary 3,2020</div>
             </div>
             <div class="blog_cont">
-            <label class="ml-1" for="">women law</label>
-            <h3 class="text-capitalize">women laws in india </h3>
-            <p class="ml-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsa blanditiis iste officiis neque obcaecati exercitationem cupiditate atque facilis quibusdam.</p>
-            <a class="ml-1 dds" href="">Read More</a>
+            <label class="" for="">women law</label>
+            <h1 class="text-capitalize">women laws in india </h1>
+            <p class=" ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsa blanditiis iste officiis neque obcaecati exercitationem cupiditate atque facilis quibusdam.</p>
+            <a class="" href="">Read More</a>
             </div>
           </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 ">
+        <div class="wraper">
           <div class="card">
             <div class="blog_img">
-            <img class="img-fluid" src="./assets/img/bike.png" alt="">
+            <img  class="img-fluid" src="./assets/img/bike.png" alt="">
             <div class="date_time">june 7,2020</div>
             </div>
             <div class="blog_cont">
-            <label class="ml-1" for="">Travel Law</label>
-            <h3 class="text-capitalize">Esential Papers For Bikers</h3>
-            <p class="ml-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsa blanditiis iste officiis neque obcaecati exercitationem .</p>
-            <a class="ml-1 dds" href="">Read More</a>
+            <label class="" for="">Travel Law</label>
+            <h1 class="text-capitalize">Esential Papers For Bikers</h1>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsa blanditiis iste officiis neque obcaecati exercitationem .</p>
+            <a class="" href="">Read More</a>
             </div>
           </div>
+          </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 ">
           <div class="card">
             <div class="blog_img">
-            <img class="img-fluid" src="./assets/img/woman.jpg" alt="">
+            <img class="img-fluid" src="./assets/img/07VZ_SELF_DEFENCE_TECHNIQUES.jpeg" alt="">
             <div class="date_time">july 13,2020</div>
             </div>
-            <div class="blog_cont">
-            <label class="ml-1" for="">Common Law</label>
-            <h3 class="text-capitalize">Self defence : Know your power</h3>
-            <p class="ml-1 ">Lorem ipsum  ipsa blanditiis iste officiis neque obcaecati exercitationem cupiditate atque facilis quibusdam.</p>
-            <a class="ml-1 dds" href="">Read More</a>
+            <div class="blog_cont ">
+            <label class="" for="">Common Law</label>
+            <h1 class="text-capitalize">Self defence : Know your power</h1>
+            <p class=" ">Lorem ipsum  ipsa blanditiis iste officiis neque obcaecati exercitationem cupiditate atque facilis quibusdam.</p>
+            <a class="" href="">Read More</a>
             </div>
           </div>
         </div>
   </div>
+  </div>
 </section>
+
+
+
+
+    <div id="includedContentfooter"></div>
+
 
 </body>
 </html>
