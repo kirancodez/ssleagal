@@ -1,0 +1,223 @@
+.detail {
+    margin-top: 4rem;
+
+    .detail-content {
+        p {
+            font-size: 16px;
+            font-family: "Rubik", sans-serif;
+            color: gray;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+        }
+
+        .quote-sec {
+            margin-top: 30px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            padding: 20px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+                0 2px 2px rgba(0, 0, 0, 0.11),
+                0 4px 4px rgba(0, 0, 0, 0.11),
+                0 6px 8px rgba(0, 0, 0, 0.11),
+                0 8px 16px rgba(0, 0, 0, 0.11);
+
+            q {
+                quotes: "“""”";
+                text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $font2;
+                color: gray;
+            }
+
+            q::before {
+                content: open-quote;
+                font-size: 20px;
+                margin-right: 10px;
+                color: $cream;
+            }
+
+            q::after {
+                content: close-quote;
+                font-size: 20px;
+                margin-left: 10px;
+                color: $cream;
+
+            }
+
+        }
+    }
+
+    img {
+        border-radius: 20px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+            0 2px 4px rgba(0, 0, 0, 0.07),
+            0 4px 8px rgba(0, 0, 0, 0.07),
+            0 8px 16px rgba(0, 0, 0, 0.07),
+            0 16px 32px rgba(0, 0, 0, 0.07),
+            0 32px 64px rgba(0, 0, 0, 0.07);
+
+    }
+
+    .othersec {
+        display: none;
+    }
+
+    .num-sec {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .full-sec {
+            margin-top: 1rem;
+        }
+        .num-sec-hed{
+            margin-bottom: 10px;
+        }
+        .num {
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            background: $cream;
+            color: #666;
+            text-align: center;
+            font-size: 12px;
+            color: white;
+            font-family: $font1;
+            padding: 4px;
+        }
+
+        .sub {
+            color: $cream;
+            font-weight: 500;
+        }
+    }
+
+    .final-drop-content {
+        margin-top: 40px;
+
+        .drop-image {
+            height: 20rem;
+
+            img {
+                height: 100%;
+                width: auto;
+                object-fit: cover;
+            }
+        }
+
+        #accordionExample {
+            margin-top: 20px;
+
+            .card {
+                padding: 0px;
+                background-color: white;
+                margin-top: 4px;
+                border: 0px;
+                // background-color: $lblue;
+            }
+
+            .card-header {
+                background-color: white;
+                border-bottom: 0px;
+                border: 0px solid white;
+                padding: 0px;
+                h1{
+                    margin-top: 10px;
+                }
+            }
+
+            .btn-link:hover {
+                text-decoration: none;
+            }
+
+            .btn-link {
+                color: gray;
+            }
+
+            .card-body {
+                font-size: 16px;
+                font-family: "Rubik", sans-serif;
+                color: gray;
+            }
+
+            .headingOne {
+                .collapsible-link {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.collapsible-link::before {
+    content: '';
+    width: 14px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1rem;
+    display: block;
+    transition: all 0.3s;
+}
+
+/* Vertical line */
+.collapsible-link::after {
+    content: '';
+    width: 2px;
+    height: 14px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: calc(1rem + 6px);
+    display: block;
+    transition: all 0.3s;
+}
+
+.collapsible-link[aria-expanded='true']::after {
+    transform: rotate(90deg) translateX(-1px);
+}
+
+.collapsible-link[aria-expanded='true']::before {
+    transform: rotate(180deg);
+}
+
+.collapsible-link {
+    text-decoration: none;
+}
+
+.card {
+    a {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: "Rubik", sans-serif;
+        color: gray;
+    }
+}
+
+
+
+
+
+@media (min-width: 767.98px) {
+    .detail-content {
+        .detail-img {
+            height: 28rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+    }
+
+    #accordionExample {
+        margin-top: 0px !important;
+    }
+
+    }

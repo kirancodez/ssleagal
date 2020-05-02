@@ -91,3 +91,29 @@ $(window).on('load',function(){
 
 
 });
+
+$(document).ready(function () {
+    $('.service-slick').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+                responsive: [
+            {
+                breakpoint: 980, // tablet breakpoint
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 480, // mobile breakpoint
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
+  });
+
+});
