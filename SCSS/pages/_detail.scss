@@ -62,9 +62,6 @@
 
     }
 
-    .othersec {
-        display: none;
-    }
 
     .num-sec {
         margin-top: 35px;
@@ -73,9 +70,11 @@
         .full-sec {
             margin-top: 1rem;
         }
-        .num-sec-hed{
+
+        .num-sec-hed {
             margin-bottom: 10px;
         }
+
         .num {
             border-radius: 50%;
             width: 24px;
@@ -124,7 +123,8 @@
                 border-bottom: 0px;
                 border: 0px solid white;
                 padding: 0px;
-                h1{
+
+                h1 {
                     margin-top: 10px;
                 }
             }
@@ -220,4 +220,11 @@
         margin-top: 0px !important;
     }
 
+}
+
+@media (max-width: 767.98px) {
+    .othersec {
+        display: none;
     }
+
+}
