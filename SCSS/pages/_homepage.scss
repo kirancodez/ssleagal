@@ -526,7 +526,7 @@ $button-width: 30px;
   
   &:before {
     content: '';
-    background: $color-main;
+    background: #000000f0;
     left: -55%;
     top: 0;
     width: 50%;
@@ -537,7 +537,7 @@ $button-width: 30px;
   
   &:after {
     content: '';
-    background: $color-main;
+    background: #000000f0;
     right: -55%;
     top: 0;
     width: 50%;
@@ -582,7 +582,7 @@ $button-width: 30px;
     font-size: 50px;
     font-family: 'Vollkorn', serif;
     font-weight: 400;
-    text-align: center;
+    // text-align: center;
     z-index: 100;
   }
   ul {
@@ -595,8 +595,6 @@ $button-width: 30px;
     
     li {
       display: block;
-      height: 25%;
-      height: calc(100% / 4);
       min-height: 50px;
       position: relative;
       opacity: 0;
