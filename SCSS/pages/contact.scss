@@ -1,0 +1,63 @@
+.contact-us{
+    margin-top: 4rem;
+}
+.map-img{
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+
+    }
+}
+.contact-contents{
+    margin-top: 4rem;
+}
+.left-wrapper{
+    h2{
+        font-family: $font2;
+        font-size: 1.8rem;
+        color: $lblue;
+        margin-bottom: 20px;
+    }
+    .find-us{
+        p{
+            font-family: $font1;
+            font-size: 16px;
+            color:$lblue;
+
+        }           
+        img{
+             margin-right: 15px;
+        }
+        .items{
+                padding: 7px;
+            }
+    }
+}
+.message-sec{
+        h2{
+        font-family: $font2;
+        font-size: 1.8rem;
+        color: $lblue;
+        margin-bottom: 40px;
+    }
+    
+}
+.form-item{
+        // border: 0px;
+        border: 1px solid #b69d7452;
+        border-radius: 10px;
+        padding: 26px;
+        margin-bottom: 15px;
+    }
+    .sbmt{
+        background-color: $cream;
+        float: right;
+        padding: 13px 40px 13px 40px;
+        border-radius: 28px;
+        color: white;
+        font-family: $font1;
+        margin-top: 20px;
+    }

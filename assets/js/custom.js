@@ -117,3 +117,11 @@ $(document).ready(function () {
   });
 
 });
+// $(document).ready(function(){
+//     $('#carouselExampleIndicators').on('slide.bs.carousel', function () {
+//         $('.carosel-content').fadeOut(300);
+//     })
+//     $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
+//         $('.carosel-content').fadeIn(600);
+//     })
+// });
