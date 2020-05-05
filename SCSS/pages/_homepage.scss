@@ -891,10 +891,10 @@ $button-width: 30px;
   margin-top: 4rem;
   margin-bottom: 4rem;
   p{
-    font-family: $font1;
-    font-size: 0.8rem;
-    color: $white;
-    margin-bottom: 4px;
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    color: #b69d74;
+    margin-bottom: 13px;
   }
   h3{
     font-family: "Merriweather", serif;
@@ -1021,6 +1021,7 @@ $button-width: 30px;
       font-size: 14px;
       margin-left: 2px;
       color: #b69d74;
+      margin-bottom: 10px;
 
     }
     h3{
@@ -1067,7 +1068,7 @@ filter: invert(67%) sepia(2%) saturate(5065%) hue-rotate(0deg) brightness(97%) c
         margin-bottom: 5px;
         font-family: $font2;
         color: $dblue;
-        font-size: 1.3rem;
+        font-size: 18px;
       }
     }
       p{
@@ -1099,12 +1100,10 @@ filter: invert(67%) sepia(2%) saturate(5065%) hue-rotate(0deg) brightness(97%) c
     border-radius:20px;
     margin-left:10px;
     margin-right:10px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.03), 
-                0 2px 4px rgba(0,0,0,0.03), 
-                0 4px 8px rgba(0,0,0,0.03), 
-                0 8px 16px rgba(0,0,0,0.03),
-                0 16px 32px rgba(0,0,0,0.03), 
-                0 32px 64px rgba(0,0,0,0.03);
+   box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.16), 
+                0 8px 8px rgba(0,0,0,0.20);
 }
 .Counter_sub{
   font-family: $font1;
