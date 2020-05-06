@@ -125,3 +125,24 @@ $(document).ready(function () {
 //         $('.carosel-content').fadeIn(600);
 //     })
 // });
+$(document).ready(function(){
+    var slideUp = {
+        distance: '150%',
+        origin: 'bottom',
+        delay: 400,
+        duration: 600,
+        opacity: 0.1
+    };
+
+    ScrollReveal().reveal('.Aboutus_Section', slideUp);
+
+
+    // card item
+
+        duration: 1500,
+    ScrollReveal().reveal('.crd-icon', { delay: 350, distance: '50%', origin: 'right', duration: 1500, opacity: 0 });
+    ScrollReveal().reveal('.crd-heading', { delay: 450, distance: '50%', origin: 'right', duration: 1500, opacity: 0 });
+    ScrollReveal().reveal('.crd-contents', { delay: 550, distance: '50%', origin: 'right', duration: 1500, opacity: 0});
+
+
+});
