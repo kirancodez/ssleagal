@@ -61,36 +61,80 @@ $(window).on('load',function(){
     });
 
 
-    $.fn.jQuerySimpleCounter = function (options) {
-        var settings = $.extend({
-            start: 0,
-            end: 100,
-            easing: 'swing',
-            duration: 400,
-            complete: ''
-        }, options);
-
-        var thisElement = $(this);
-
-        $({ count: settings.start }).animate({ count: settings.end }, {
-            duration: settings.duration,
-            easing: settings.easing,
-            step: function () {
-                var mathCount = Math.ceil(this.count);
-                thisElement.text(mathCount);
-            },
-            complete: settings.complete
-        });
-    };
-
-
-    $('#number1').jQuerySimpleCounter({ end: 12, duration: 3000 });
-    $('#number2').jQuerySimpleCounter({ end: 55, duration: 3000 });
-    $('#number3').jQuerySimpleCounter({ end: 359, duration: 2000 });
-    $('#number4').jQuerySimpleCounter({ end: 246, duration: 2500 });
-
+    
 
 });
+
+
+
+// counter
+
+$.fn.isOnScreen = function () {
+
+    var win = $(window);
+
+    var viewport = {
+        top: win.scrollTop(),
+        left: win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+};
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($('#projectFacts').isOnScreen()) {
+            $.fn.jQuerySimpleCounter = function (options) {
+                var settings = $.extend({
+                    start: 0,
+                    end: 100,
+                    easing: 'swing',
+                    duration: 400,
+                    complete: ''
+                }, options);
+
+                var thisElement = $(this);
+
+                $({ count: settings.start }).animate({ count: settings.end }, {
+                    duration: settings.duration,
+                    easing: settings.easing,
+                    step: function () {
+                        var mathCount = Math.ceil(this.count);
+                        thisElement.text(mathCount);
+                    },
+                    complete: settings.complete
+                });
+            };
+
+
+            $('#number1').jQuerySimpleCounter({ end: 12, duration: 3000 });
+            $('#number2').jQuerySimpleCounter({ end: 55, duration: 3000 });
+            $('#number3').jQuerySimpleCounter({ end: 359, duration: 2000 });
+            $('#number4').jQuerySimpleCounter({ end: 246, duration: 2500 });
+
+
+        } else {
+            // The element is NOT visible, do something else
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
 
 $(document).ready(function () {
     $('.service-slick').slick({
@@ -127,22 +171,21 @@ $(document).ready(function () {
 // });
 $(document).ready(function(){
     var slideUp = {
-        distance: '30%',
+        distance: '50%',
         origin: 'bottom',
-        delay: 400,
-        duration: 600,
-        opacity: 0.1
+        delay: 200,
+        duration: 1900,
+        opacity: 0,
+        reset:true
     };
-
     ScrollReveal().reveal('.Aboutus_Section', slideUp);
 
-
     // card item
-
-        duration: 1500,
-    ScrollReveal().reveal('.crd-icon', { delay: 350, distance: '20%', origin: 'right', duration: 1500, opacity: 0,reset:true });
-    ScrollReveal().reveal('.crd-heading', { delay: 450, distance: '20%', origin: 'right', duration: 1500, opacity: 0, reset: true });
-    ScrollReveal().reveal('.crd-contents', { delay: 550, distance: '20%', origin: 'right', duration: 1500, opacity: 0, reset: true});
+    ScrollReveal().reveal('.crd-icon', { delay: 350, distance: '25%', origin: 'right', duration: 1200, opacity: 0,reset:true });
+    ScrollReveal().reveal('.crd-heading', { delay: 450, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true });
+    ScrollReveal().reveal('.crd-contents', { delay: 550, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true});
 
 
 });
+
+
