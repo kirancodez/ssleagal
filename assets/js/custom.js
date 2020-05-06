@@ -127,7 +127,7 @@ $(document).ready(function () {
 // });
 $(document).ready(function(){
     var slideUp = {
-        distance: '150%',
+        distance: '30%',
         origin: 'bottom',
         delay: 400,
         duration: 600,

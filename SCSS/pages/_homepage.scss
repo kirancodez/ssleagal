@@ -1,4 +1,5 @@
 @use '/Applications/MAMP/htdocs/ssleagal/SCSS/pages/_variables.scss';
+
 $font1:'Rubik', sans-serif;
 $font2:'Merriweather', serif;
 $gray:gray;
@@ -964,6 +965,10 @@ $button-width: 30px;
   }
   .Card-container{
     padding-bottom: 3.4rem;
+  }
+  .card-deck{
+    width: 100%;
+    overflow: hidden;
   }
 
 
