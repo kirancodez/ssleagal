@@ -140,9 +140,9 @@ $(document).ready(function(){
     // card item
 
         duration: 1500,
-    ScrollReveal().reveal('.crd-icon', { delay: 350, distance: '50%', origin: 'right', duration: 1500, opacity: 0 });
-    ScrollReveal().reveal('.crd-heading', { delay: 450, distance: '50%', origin: 'right', duration: 1500, opacity: 0 });
-    ScrollReveal().reveal('.crd-contents', { delay: 550, distance: '50%', origin: 'right', duration: 1500, opacity: 0});
+    ScrollReveal().reveal('.crd-icon', { delay: 350, distance: '20%', origin: 'right', duration: 1500, opacity: 0,reset:true });
+    ScrollReveal().reveal('.crd-heading', { delay: 450, distance: '20%', origin: 'right', duration: 1500, opacity: 0, reset: true });
+    ScrollReveal().reveal('.crd-contents', { delay: 550, distance: '20%', origin: 'right', duration: 1500, opacity: 0, reset: true});
 
 
 });
