@@ -9,6 +9,7 @@
     <script src="./assets/js/bootstrap.min.js" ></script>
     <script src="./assets/js/gsap.min.js" ></script>
     <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/custom-dist.css">
 </head>
@@ -195,7 +196,7 @@
 <div class="container Card-container">
   <div class="card-deck">
     <div class="col-md-4 Singlecard">
-      <div class="card">
+      <div class="card btn1">
       <div class="card-body">
         <div class="card-content">
           <div class="Head_Icon">
@@ -210,15 +211,14 @@
       </div>
     </div>
     <div class="col-md-4 Singlecard">
-      <div class="card">
+      <div class="card btn1">
         <div class="card-body">
           <div class="card-content">
             <div class="Head_Icon">
               <img class="crd-icon" src="./assets/svg/risk.svg" />
               <h1 class="crd-heading">Capital Market</h1>
             </div>
-            <p class="crd-contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo vitae atque repudia . <a href="">Know
-                More</a>
+            <p class="crd-contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo vitae atque repudia .  
             </p>
           </div>
         </div>
@@ -226,7 +226,7 @@
     </div>
 
     <div class="col-md-4 Singlecard">
-      <div class="card">
+      <div class="card btn1">
     <div class="card-body">
       <div class="card-content">
         <div class="Head_Icon">
@@ -241,7 +241,7 @@
       </div>
     </div>
     <div class="col-md-4 Singlecard">
-      <div class="card">
+      <div class="card btn1">
     <div class="card-body">
       <div class="card-content">
         <div class="Head_Icon">
@@ -255,8 +255,10 @@
     </div>
       </div>
     </div>
+    
 
   </div>
+  <p id="view" class="view-all float-right">View All <img src="./assets/svg/right-arrow.svg" alt="" width="28px"> </p>
 </div>
 
   </div>  
@@ -392,7 +394,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="testi-frame">
-          <div id="carouselExampleIndicators" class="testi-carousel" data-ride="carousel">
+          <div id="carouselExampleIndicators1" class="testi-carousel slide" data-ride="carousel">
                   <img class="bQuote" src="./assets/svg/right-quote-sign.svg" alt="">
             <!-- <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -404,8 +406,10 @@
                 <div class="testi-content text-center">
                   <img class="dp" class="img-fluid" src="./assets/img/12.jpg" alt="">
                   <p class="testi-name">Pritty shain</p>
+                  <p class="testi-designation font-italic"> CEO , The company ,Kochi</p>
                   <div class="rating">
-                    <span class="active">☆</span><span class="active">☆</span><span class="active">☆</span><span class="active" >☆</span><span>☆</span>
+                    <input type="hidden" value="3" class="score">
+                    <span class="star active">☆</span><span class="active">☆</span><span class="active">☆</span><span class="active" >☆</span><span>☆</span>
                     <p class="comment">Lorem ipsum dolor sit  dolore vitae laboriosam reiciendis delectus ut beatae repellat, harum accusamus magni non asperiores distinctio. Voluptate labore natus nisi veniam</p>
                   </div>
                 </div>
@@ -414,6 +418,8 @@
                 <div class="testi-content text-center">
                   <img class="dp" class="img-fluid" src="./assets/img/picture.jpg" alt="">
                   <p class="testi-name">Pritty shain 1</p>
+                  <p class="testi-designation font-italic"> Lorem & sit co ,kakkanad</p>
+
                   <div class="rating">
                     <span class="active">☆</span><span class="active">☆</span><span class="active">☆</span><span class="active" >☆</span><span class="active">☆</span>
                     <p class="comment">Lorem ipsum dolor sit  dolore vitae laboriosam reiciendis delectus ut beatae repellat, harum accusamus magni non asperiores distinctio. Voluptate labore natus nisi veniam</p>
@@ -424,8 +430,9 @@
                 <div class="testi-content text-center">
                   <img class="dp" class="img-fluid" src="./assets/img/alvin.jpg" alt="">
                   <p class="testi-name">Pritty shain 2</p>
+                  <p class="testi-designation font-italic"> Wonder creations ,palarivattom</p>
                   <div class="rating">
-                    <span class="active">☆</span><span class="active">☆</span><span class="active">☆</span><span
+                    <span class=" active">☆</span><span class="active">☆</span><span class="active">☆</span><span
                       class="">☆</span><span>☆</span>
                     <p class="comment">Lorem ipsum dolor sit dolore vitae laboriosam reiciendis delectus ut beatae repellat, harum
                       accusamus magni non asperiores distinctio. Voluptate labore natus nisi veniam</p>
@@ -459,10 +466,10 @@
   </div>
 </div>
   <div class="container">
-    <div class="row">
+    <div class="row cardRow">
     <div class="card-deck">
       <div class="col-md-4">
-          <div class="card ">
+          <div class="card btn1 ">
             <div class="blog_img">
             <img class="img-fluid" src="./assets/img/woman.jpg" alt="">
             <div class="date_time">Januvary 3,2020</div>

@@ -1,5 +1,6 @@
 .blog-details{
     margin-top: 4rem;
+    margin-bottom: 4rem;
     .blog-img{
         height: 30rem;
         border-radius: 20px;
@@ -42,4 +43,12 @@
             margin-bottom: 10px;
             margin-top: 30px;
         }
+}   
+@media (max-width: 767.98px) {
+
+    .blog-details{
+        .blog-img{
+            height: 15rem;
+        }
+    }
 }

@@ -88,57 +88,12 @@ $.fn.isOnScreen = function () {
 
 };
 
-$(document).ready(function () {
-    $(window).scroll(function () {
-        if ($('#projectFacts').isOnScreen()) {
-            $.fn.jQuerySimpleCounter = function (options) {
-                var settings = $.extend({
-                    start: 0,
-                    end: 100,
-                    easing: 'swing',
-                    duration: 400,
-                    complete: ''
-                }, options);
-
-                var thisElement = $(this);
-
-                $({ count: settings.start }).animate({ count: settings.end }, {
-                    duration: settings.duration,
-                    easing: settings.easing,
-                    step: function () {
-                        var mathCount = Math.ceil(this.count);
-                        thisElement.text(mathCount);
-                    },
-                    complete: settings.complete
-                });
-            };
-
-
-            $('#number1').jQuerySimpleCounter({ end: 12, duration: 3000 });
-            $('#number2').jQuerySimpleCounter({ end: 55, duration: 3000 });
-            $('#number3').jQuerySimpleCounter({ end: 359, duration: 2000 });
-            $('#number4').jQuerySimpleCounter({ end: 246, duration: 2500 });
-
-
-        } else {
-            // The element is NOT visible, do something else
-        }
-    });
-});
-
-
-
-
-
-
-
-
-
-
 
 $(document).ready(function () {
     $('.service-slick').slick({
         slidesToShow: 5,
+        prevArrow: false,
+        nextArrow: false,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -161,14 +116,9 @@ $(document).ready(function () {
   });
 
 });
-// $(document).ready(function(){
-//     $('#carouselExampleIndicators').on('slide.bs.carousel', function () {
-//         $('.carosel-content').fadeOut(300);
-//     })
-//     $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
-//         $('.carosel-content').fadeIn(600);
-//     })
-// });
+
+// Scroll Reval
+
 $(document).ready(function(){
     var slideUp = {
         distance: '50%',
@@ -185,7 +135,160 @@ $(document).ready(function(){
     ScrollReveal().reveal('.crd-heading', { delay: 450, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true });
     ScrollReveal().reveal('.crd-contents', { delay: 550, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true});
 
+    var contactContent = {
+        distance: '30%',
+        origin : 'left',
+        delay : 450,
+        duration : 1200,
+        opacity : 0,
+    };
+    ScrollReveal().reveal('.contact-content', contactContent);
+
+    var ContactForm = {
+        distance: '30%',
+        origin: 'right',
+        delay: 450,
+        duration: 1200,
+        opacity: 0,
+    };
+    ScrollReveal().reveal('.Contact-form', ContactForm);
+
+    var abtcontent = {
+        distance: '30%',
+        origin: 'right',
+        delay: 450,
+        duration: 1200,
+        opacity: 0,
+    };
+    ScrollReveal().reveal('.abt-content', abtcontent);
+    
+    var detail_img = {
+        distance: '30%',
+        origin: 'bottom',
+        delay: 250,
+        duration: 1200,
+        opacity: 0,
+    };
+    ScrollReveal().reveal('.detail-img', detail_img);
+
+
+    var detail_img = {
+        distance: '30%',
+        origin: 'bottom',
+        delay: 250,
+        duration: 1200,
+        opacity: 0,
+    };
+    ScrollReveal().reveal('.detail-img', detail_img);
+
+    var prack_detail = {
+        distance: '30%',
+        origin: 'bottom',
+        delay: 350,
+        duration: 1200,
+        opacity: 0,
+    };
+    ScrollReveal().reveal('.prack-detail', prack_detail);
+
+    var quote_sec = {
+        distance: '30%',
+        origin: 'bottom',
+        delay: 350,
+        duration: 1200,
+        scale: 0.85,
+        opacity: 0,
+    };
+    ScrollReveal().reveal('.quote-sec', quote_sec);
+
+
+    var num_sec = {
+        distance: '30%',
+        origin: 'bottom',
+        delay: 350,
+        duration: 1200,
+        scale: 0.85,
+        opacity: 0,
+    };
+    ScrollReveal().reveal('.num-sec', num_sec);
+
+    var final_drop_content = {
+        distance: '30%',
+        origin: 'bottom',
+        delay: 350,
+        duration: 1200,
+        scale: 0.85,
+        opacity: 0,
+    };
+    ScrollReveal().reveal('.final-drop-content', final_drop_content);
+
+    // var slideUp = {
+    //     distance: '50%',
+    //     origin: 'bottom',
+    //     delay: 200,
+    //     duration: 1900,
+    //     opacity: 0,
+    //     reset: true
+    // };
+    // ScrollReveal().reveal('.blogs', slideUp);
+    
+    // ScrollReveal().reveal('.dp', { delay: 10, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true });
+    // ScrollReveal().reveal('.testi-name', { delay: 10, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true });
+    // ScrollReveal().reveal('.rating', { delay: 10, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true });
+
 
 });
+
+
+$("html").on("click", ".btn1", function (evt) {
+    var btn = $(evt.currentTarget);
+    var x = evt.pageX - btn.offset().left;
+    var y = evt.pageY - btn.offset().top;
+
+    $("<span/>").appendTo(btn).css({
+        left: x,
+        top: y
+    });
+});
+
+// counter Trigger
+$(document).ready(function(){
+    var waypoint = new Waypoint({
+        element: document.getElementById('cont'),
+        handler: function (direction) {
+            if (direction == 'down') {
+                $.fn.jQuerySimpleCounter = function (options) {
+                    var settings = $.extend({
+                        start: 0,
+                        end: 100,
+                        easing: 'swing',
+                        duration: 400,
+                        complete: ''
+                    }, options);
+
+                    var thisElement = $(this);
+
+                    $({ count: settings.start }).animate({ count: settings.end }, {
+                        duration: settings.duration,
+                        easing: settings.easing,
+                        step: function () {
+                            var mathCount = Math.ceil(this.count);
+                            thisElement.text(mathCount);
+                        },
+                        complete: settings.complete
+                    });
+                };
+
+
+                $('#number1').jQuerySimpleCounter({ end: 12, duration: 5000 });
+                $('#number2').jQuerySimpleCounter({ end: 55, duration: 5000 });
+                $('#number3').jQuerySimpleCounter({ end: 359, duration: 5000 });
+                $('#number4').jQuerySimpleCounter({ end: 246, duration: 5500 });
+            }
+        },
+        offset: 100
+    });
+});
+
+
 
 

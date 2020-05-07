@@ -66,12 +66,19 @@ h1 {
   .innerheader {
     display: none;
   }
+  .page-heading{
+    display: none;
+  }
+  .AboutMain{
+    margin-top: 4rem !important;
+  }
 }
 
 @media (min-width: 767.98px) {
   .mobile_inner_header {
     display: none;
   }
+
 }
 
 .mobile_inner_header {
@@ -160,7 +167,7 @@ h1 {
         background: $color-active;
       }
 
-      .middle {
+      .middlle {
         opacity: 0;
         background: $color-active;
       }
@@ -213,7 +220,7 @@ h1 {
 
     &:before {
       content: '';
-      background: $color-main;
+      background: #000000f0;
       left: -55%;
       top: 0;
       width: 50%;
@@ -224,7 +231,7 @@ h1 {
 
     &:after {
       content: '';
-      background: $color-main;
+      background: #000000f0;
       right: -55%;
       top: 0;
       width: 50%;
@@ -272,55 +279,76 @@ h1 {
       font-size: 50px;
       font-family: 'Vollkorn', serif;
       font-weight: 400;
-      text-align: center;
       z-index: 100;
     }
 
     ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 auto;
-      display: inline-block;
-      position: relative;
-      height: 100%;
+    width: 100%;
+    padding-left: 35px;
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+        .ov-item{
+      margin-top: 4px;
+      margin-left: 8px;
+    }
 
       li {
-        display: block;
-        height: 25%;
-        height: calc(100% / 4);
-        min-height: 50px;
-        position: relative;
-        opacity: 0;
+      display: block;
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
 
         a {
-          display: block;
-          position: relative;
-          color: $color-link;
-          text-decoration: none;
-          overflow: hidden;
+        display: block;
+        position: relative;
+        color: $color-link;
+        text-decoration: none;
+        overflow: hidden;
+        font-family: $font2;
+        font-size: 20px;
 
           &:hover:after,
           &:focus:after,
           &:active:after {
             width: 100%;
           }
-
-          &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0%;
-            transform: translateX(-50%);
-            height: 3px;
-            background: $color-link;
-            transition: .35s;
-          }
+                  &:hover{
+          color: $cream;
+          transition: .45s;
+        }
+          // &:after {
+          //   content: '';
+          //   position: absolute;
+          //   bottom: 0;
+          //   left: 50%;
+          //   width: 0%;
+          //   transform: translateX(-50%);
+          //   height: 3px;
+          //   background: $color-link;
+          //   transition: .35s;
+          // }
         }
       }
     }
   }
-
+.overlay.open li:nth-of-type(2){
+  margin-top: 20px !important;
+}
+.overlay.open li:nth-of-type(5) {
+    -webkit-animation-delay: .75s;
+    animation-delay: .75s;
+}
+.overlay.open li:nth-of-type(6) {
+    -webkit-animation-delay: .85s;
+    animation-delay: .85s;
+}
+.overlay.open li:nth-of-type(7) {
+    -webkit-animation-delay: .95s;
+    animation-delay: .95s;
+}
   @keyframes fadeInRight {
     0% {
       opacity: 0;
@@ -373,6 +401,8 @@ h1 {
 }
 
 .AboutMain {
+  width: 100%;
+  overflow: hidden;
   .row {
     margin-top: 8rem;
   }
