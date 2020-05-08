@@ -1,3 +1,6 @@
+$(window).on('load', function () {
+    $(".loader").fadeOut("slow");
+});
 $(document).ready(function () {
     var percent = 0, bar = $('#myBar'), crsl = $('#carouselExampleIndicators');
     function progressBarCarousel() {
