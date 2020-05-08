@@ -896,6 +896,7 @@ $button-width: 30px;
     font-size: 14px;
     color: #b69d74;
     margin-bottom: 13px;
+    padding-left: 10px;
   }
   h3{
     font-family: "Merriweather", serif;
@@ -905,6 +906,7 @@ $button-width: 30px;
     margin-right: 35px;
     margin-bottom: 20px;
     line-height: 40px;
+    padding-left: 10px;
   }
   .Content
   {
@@ -912,8 +914,8 @@ $button-width: 30px;
     font-size: 16px;
     font-family: $font1;
     word-spacing: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
 
   }
   button{
@@ -972,6 +974,9 @@ $button-width: 30px;
   .card-deck{
     width: 100%;
     overflow: hidden;
+    .card{
+      padding: 10px;
+    }
   }
 
 
@@ -1599,6 +1604,8 @@ td {
       margin-bottom: 20px;
       line-height: 44px;
       text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
         span{
           color: $cream;
         }
@@ -1608,8 +1615,8 @@ td {
         font-size: 16px;
         font-family: "Rubik", sans-serif;
         word-spacing: 2px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 12px;
+        padding-right: 12px;
       }
 
     }
