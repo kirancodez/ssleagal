@@ -687,6 +687,7 @@ $button-width: 30px;
     .carousel-item{
         img{
             height:-webkit-fill-available;
+            object-fit: cover;
         }
     }
 }
