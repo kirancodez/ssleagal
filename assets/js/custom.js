@@ -26,28 +26,28 @@ $(document).ready(function () {
             barInterval = setInterval(progressBarCarousel, 30);
         })
 });
-// $(document).ready(function(){
-//     $('#toggle').click(function () {
-//         $(this).toggleClass('active');
-//         $('#overlay').toggleClass('open');
-//     });
-//     $("#mycarouselExampleIndicators").swiperight(function () {
-//         $(this).carousel('prev');
-//     });
-//     $("#mycarouselExampleIndicators").swipeleft(function () {
-//         $(this).carousel('next');
-//     });
-// });
-// $(document).ready(function(){
+$(document).ready(function(){
+    $('#toggle').click(function () {
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+    });
+    // $("#mycarouselExampleIndicators").swiperight(function () {
+    //     $(this).carousel('prev');
+    // });
+    // $("#mycarouselExampleIndicators").swipeleft(function () {
+    //     $(this).carousel('next');
+    // });
+});
+$(document).ready(function(){
 
-//     var wrapperMenu = document.querySelector('.wrapper-menu');
+    var wrapperMenu = document.querySelector('.wrapper-menu');
 
-//     wrapperMenu.addEventListener('click', function () {
-//         $('#toggle').toggleClass('active');
-//         $('#overlay').toggleClass('open');
-//         wrapperMenu.classList.toggle('open');
-//     })
-// });
+    wrapperMenu.addEventListener('click', function () {
+        $('#toggle').toggleClass('active');
+        $('#overlay').toggleClass('open');
+        wrapperMenu.classList.toggle('open');
+    })
+});
 $(window).on('load',function(){ 
     var containerHeight = $(".pracCont").height();
     var CounterHight = containerHeight-100+"px";
@@ -129,14 +129,14 @@ $(document).ready(function(){
         delay: 200,
         duration: 1900,
         opacity: 0,
-        
+        reset:true
     };
     ScrollReveal().reveal('.Aboutus_Section', slideUp);
 
     // card item
-    ScrollReveal().reveal('.crd-icon', { delay: 350, distance: '25%', origin: 'right', duration: 1200, opacity: 0 });
-    ScrollReveal().reveal('.crd-heading', { delay: 450, distance: '25%', origin: 'right', duration: 1200, opacity: 0 });
-    ScrollReveal().reveal('.crd-contents', { delay: 550, distance: '25%', origin: 'right', duration: 1200, opacity: 0});
+    ScrollReveal().reveal('.crd-icon', { delay: 350, distance: '25%', origin: 'right', duration: 1200, opacity: 0,reset:true });
+    ScrollReveal().reveal('.crd-heading', { delay: 450, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true });
+    ScrollReveal().reveal('.crd-contents', { delay: 550, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true});
 
     var contactContent = {
         distance: '30%',
