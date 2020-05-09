@@ -129,14 +129,14 @@ $(document).ready(function(){
         delay: 200,
         duration: 1900,
         opacity: 0,
-        reset:true
+
     };
     ScrollReveal().reveal('.Aboutus_Section', slideUp);
 
     // card item
-    ScrollReveal().reveal('.crd-icon', { delay: 350, distance: '25%', origin: 'right', duration: 1200, opacity: 0,reset:true });
-    ScrollReveal().reveal('.crd-heading', { delay: 450, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true });
-    ScrollReveal().reveal('.crd-contents', { delay: 550, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true});
+    ScrollReveal().reveal('.crd-icon', { delay: 350, distance: '25%', origin: 'right', duration: 1200, opacity: 0});
+    ScrollReveal().reveal('.crd-heading', { delay: 450, distance: '25%', origin: 'right', duration: 1200, opacity: 0 });
+    ScrollReveal().reveal('.crd-contents', { delay: 550, distance: '25%', origin: 'right', duration: 1200, opacity: 0});
 
     var contactContent = {
         distance: '30%',
@@ -223,21 +223,6 @@ $(document).ready(function(){
         opacity: 0,
     };
     ScrollReveal().reveal('.final-drop-content', final_drop_content);
-
-    // var slideUp = {
-    //     distance: '50%',
-    //     origin: 'bottom',
-    //     delay: 200,
-    //     duration: 1900,
-    //     opacity: 0,
-    //     reset: true
-    // };
-    // ScrollReveal().reveal('.blogs', slideUp);
-    
-    // ScrollReveal().reveal('.dp', { delay: 10, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true });
-    // ScrollReveal().reveal('.testi-name', { delay: 10, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true });
-    // ScrollReveal().reveal('.rating', { delay: 10, distance: '25%', origin: 'right', duration: 1200, opacity: 0, reset: true });
-
 
 });
 
